@@ -1,5 +1,5 @@
 class scoreClass {
-  constructor(name,score) {
+  constructor(name, score) {
     this.name = name;
     this.score = score;
   }
@@ -7,13 +7,13 @@ class scoreClass {
   addScoreDOM = () => {
     const ul = document.querySelector('#leaderboad-ul');
     const li = document.createElement('li');
-    const para = document.createElement('p')
+    const para = document.createElement('p');
     para.textContent = this.name;
-    const span = document.createElement('span')
+    const span = document.createElement('span');
     span.textContent = this.score;
-    li.appendChild(para)
-    li.appendChild(span)
-    ul.appendChild(li)
+    li.appendChild(para);
+    li.appendChild(span);
+    ul.appendChild(li);
   }
 }
 
