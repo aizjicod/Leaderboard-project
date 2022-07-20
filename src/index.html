@@ -12,37 +12,18 @@
 
   <section id="leaderboard">
     <h2>recent scores</h2>
-    <button type="button">refresh</button>
+    <button type="button" id="refresh-btn">refresh</button>
     <ul id="leaderboad-ul">
-      <li>
-        <p>name </p>
-        <span>number</span>
-      </li>
-      <li>
-        <p>name </p>
-        <span>number</span>
-      </li>
-      <li>
-        <p>name </p>
-        <span>number</span>
-      </li>
-      <li>
-        <p>name </p>
-        <span>number</span>
-      </li>
-      <li>
-        <p>name </p>
-        <span>number</span>
-      </li>
+      <!-- space for scores -->
     </ul>
   </section>
 
   <section id="addScore">
     <h2>add new score</h2>
     <form>
-      <input type="text" placeholder="your name">
-      <input type="number" placeholder="your score">
-      <input type="submit" value="submit">
+      <input type="text" placeholder="your name" id="input-name">
+      <input type="number" placeholder="your score" id="input-score">
+      <input type="submit" value="submit" id="input-submit">
     </form>
   </section>
 </body>
