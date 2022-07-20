@@ -7,7 +7,7 @@
 body {
   padding-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -30,6 +30,7 @@ body {
   width: 80vw;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -49,6 +50,10 @@ body {
   list-style: none;
   border: 2px solid #000;
   box-shadow: 5px 5px 3px #000;
+  min-height:188px ;
+  max-height: 325px;
+  overflow: hidden;
+  overflow-y:visible;
 }
 
 #leaderboad-ul li{
@@ -67,6 +72,7 @@ body {
 #addScore {
   padding: 24px;
   width: 80vw;
+  height: min-content;
   display: flex;
   justify-content: center;
   align-items:flex-start;
@@ -78,7 +84,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  gap: 12px;
+  gap: 24px;
 }
 
 #addScore form input{
@@ -106,6 +112,6 @@ body {
   }
 
   #addScore {
-    width: 40vw;
+    width: 20vw;
   }
 }

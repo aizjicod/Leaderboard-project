@@ -21,6 +21,9 @@ console.log(document.querySelector('li p').textContent)
   if(document.querySelector('li p').textContent === 'if you want to refresh the page ') {
     document.querySelector('li p').parentElement.remove();
   }
+  if(document.querySelector('li p').textContent === 'this texts will be deleted when you add something') {
+    document.querySelector('li p').parentElement.remove();
+  }
   
 
   // setting the DOM
@@ -33,6 +36,7 @@ console.log(document.querySelector('li p').textContent)
   // reset values for inputs
   nameInput.value = '';
   scoreInput.value = '';
+  nameInput.focus();
 });
 
 refreshBtn.addEventListener('click', () => {
@@ -57,6 +61,10 @@ window.addEventListener('load', () => {
       {
         name: 'if you want to refresh the page ',
         score: 'click the button from above'
+      },
+      {
+        name: 'this texts will be deleted when you add something',
+        score: 'think of this as a previsualitation'
       }
     ];
 
