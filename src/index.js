@@ -1,5 +1,4 @@
 import ScoreClass from './modules/scoreClass.js';
-// import Storage from './modules/localStorage.js';
 import apis from './modules/leaderboardAPIS.js';
 import './style.css';
 
