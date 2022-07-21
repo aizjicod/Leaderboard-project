@@ -7,20 +7,19 @@ const scoreInput = document.querySelector('#input-score');
 const submitInput = document.querySelector('#input-submit');
 const refreshBtn = document.querySelector('#refresh-btn');
 
-let arrScores = [];
-let gameID = apis.GAMEID;
+const arrScores = [];
+const gameID = apis.GAMEID;
 
 window.addEventListener('load', async () => {
   // getting the
-  let fetchData = await apis.fetchScores();
-  arrScores.push(...fetchData)
+  const fetchData = await apis.fetchScores();
+  arrScores.push(...fetchData);
   // putting each score on DOM
-  if(arrScores.length !== - 1 ) {
-    console.log('arr')
+  if (arrScores.length !== -1) {
     arrScores.forEach((element) => {
       const score = new ScoreClass(element.user, element.score);
       score.addScoreDOM();
-    })
+    });
   }
 });
 
@@ -29,7 +28,7 @@ submitInput.addEventListener('click', (e) => {
   // setting the DOM
   const newScore = new ScoreClass(nameInput.value, scoreInput.value);
   // add score to the api
-  apis.addNewScore(gameID,newScore)
+  apis.addNewScore(gameID, newScore);
   arrScores.push(newScore);
   // reset values for inputs
   nameInput.value = '';
