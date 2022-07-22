@@ -1,11 +1,13 @@
-# Webpack boilerplate
+# Leaderboard Project
 
-> on this project a will be doing a template so is easier to use a webpack
-
+> on this project a will be a leaderboard while using webpack and API's 
 
 ## Built With
 
 - webpack
+- APIS
+- JavaScrip
+- HTML/CSS
 
 ## Getting Started
 
