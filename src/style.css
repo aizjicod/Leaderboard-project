@@ -1,26 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Saira+Stencil+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
+  background: #000 url(./img/bg2.jpg) no-repeat 0% 100%;
+  background-size: cover;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 50px;
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+  backdrop-filter: blur(10px); /* Supported in Chrome 76 */
+}
+
+button {
+  padding: 0.5em 1em;
+  background: transparent;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 8px #fff;
+  color: #fff;
 }
 
 /* title section */
 
 #title {
-  width: 70vw;
+  width: 80vw;
 }
 
 #title h1 {
-  text-decoration: underline;
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 4em;
   text-transform: capitalize;
+  color: #fff;
 }
 
 /* leaderboard sections */
@@ -39,33 +58,48 @@ body {
   display: inline-block;
 }
 
-#leaderboard button {
-  padding: 0.5em 1em;
-  background: transparent;
-  border: 2px solid #000;
-  box-shadow: 5px 5px 3px #000;
-}
-
 #leaderboad-ul {
   min-width: 100%;
   list-style: none;
-  border: 2px solid #000;
-  box-shadow: 5px 5px 3px #000;
+  border: 1px solid #ffd000;
+  box-shadow: 20px 20px 8px #ffd00045;
+  border-radius: 20px;
   min-height: 188px;
   max-height: 325px;
   overflow: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+#leaderboad-ul::-webkit-scrollbar {
+  width: 20px;
+  background: transparent;
+}
+
+#leaderboad-ul::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+#leaderboad-ul::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border-left: 0;
+  border-right: 0;
+  background-color: #fc0;
 }
 
 #leaderboad-ul li {
   width: 100%;
   display: flex;
   gap: 12px;
-  padding: 8px;
+  padding: 1em;
+  color: #ffe100;
+  background: transparent;
 }
 
 #leaderboad-ul li:nth-child(even) {
-  background: #dadada;
+  background: #fffa;
+  color: #ffd000;
 }
 
 /* add section */
@@ -96,12 +130,13 @@ body {
 }
 
 #addScore form input:last-of-type {
+  width: max-content;
   padding: 0.5em 1em;
-  width: 30%;
   outline: none;
-  border: 2px solid #000;
-  background: transparent;
-  box-shadow: 5px 5px 3px #000;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 8px #fff;
 }
 
 /* media queries */
@@ -113,5 +148,7 @@ body {
 
   #addScore {
     width: 20vw;
+    position: relative;
+    right: 200px;
   }
 }
