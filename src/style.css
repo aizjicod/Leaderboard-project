@@ -9,14 +9,14 @@
 }
 
 body {
-  background: #000 url(./img/bg2.jpg) no-repeat 0% 100% ;
+  background: #000 url(./img/bg2.jpg) no-repeat 0% 100%;
   background-size: cover;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 50px;
-  color:#fff;
+  color: #fff;
   -webkit-backdrop-filter: blur(10px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
   backdrop-filter: blur(10px); /* Supported in Chrome 76 */
 }
@@ -28,6 +28,7 @@ button {
   box-shadow: 3px 3px 8px #fff;
   color: #fff;
 }
+
 /* title section */
 
 #title {
@@ -66,7 +67,7 @@ button {
   min-height: 188px;
   max-height: 325px;
   overflow: hidden;
-  overflow-y:scroll;
+  overflow-y: scroll;
   scrollbar-width: thin;
 }
 
@@ -84,7 +85,7 @@ button {
   border-radius: 100px;
   border-left: 0;
   border-right: 0;
-  background-color: #ffcc00;
+  background-color: #fc0;
 }
 
 #leaderboad-ul li {
@@ -96,8 +97,8 @@ button {
   background: transparent;
 }
 
-#leaderboad-ul li:nth-child(even) { 
-  background: #ffffffaa;
+#leaderboad-ul li:nth-child(even) {
+  background: #fffa;
   color: #ffd000;
 }
 
@@ -129,14 +130,13 @@ button {
 }
 
 #addScore form input:last-of-type {
-  padding: 0.5em 1em;
   width: max-content;
-  outline: none;
   padding: 0.5em 1em;
+  outline: none;
+  color: #fff;
   background: rgba(0, 0, 0, 0.6);
   border: 2px solid #fff;
   box-shadow: 3px 3px 8px #fff;
-  color: #fff;
 }
 
 /* media queries */
@@ -149,6 +149,6 @@ button {
   #addScore {
     width: 20vw;
     position: relative;
-    right:200px;
+    right: 200px;
   }
 }
